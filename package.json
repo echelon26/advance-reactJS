@@ -1,0 +1,38 @@
+{
+  "name": "ReactJS",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "build": "webpack -wd",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "7",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.15.2",
+    "jest": "^24.5.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
